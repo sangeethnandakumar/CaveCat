@@ -40,10 +40,11 @@ For a rich CaveScript editing experiance with UI support. CaveCat IDE is release
 ## A Complicated WebScrapping Task From a Dynamic WebSite
 
 ```cavecat
-[AUTOMATE]
+[WEB]
 goto 'https://en.spitogatos.gr/'
 click LatestListings
 create CSV
+
 [SCRAPE]
 limelight ListingPart
 for every Div inside ListingPart
