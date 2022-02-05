@@ -37,6 +37,25 @@ CaveCat run as an interepreter to execute CaveScript.
 We can create a CaveScript with any text editors such as notepad.
 For a rich CaveScript editing experiance with UI support. CaveCat IDE is released.
 
-## Releases
-v1 - Supported Commands
-goto <URL> = Allows
+## A Complicated WebScrapping Task From a Dynamic WebSite
+
+```cavecat
+[AUTOMATE]
+goto 'https://en.spitogatos.gr/'
+click LatestListings
+create CSV
+[SCRAPE]
+limelight ListingPart
+for every Div inside ListingPart
+::
+   limelight Div
+   scrape '#email' to A
+   scrape '.password' to B
+   CSV writeline A,B
+::
+save CSV to 'C:\Desktop\Sangee.txt'
+
+[DOM]
+LatestListings = //*[@id="ui-id-1"]
+ListingPart = //*[@id="latestTabs_latestProperties"]/div/div
+```
