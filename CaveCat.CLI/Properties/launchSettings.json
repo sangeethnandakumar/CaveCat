@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "CaveCat.CLI": {
+      "commandName": "Project",
+      "commandLineArgs": "\"D:\\Sources\\CaveCat\\CaveCat IDE\\CaveCat IDE\\bin\\Debug\\temp.cat\"",
+      "workingDirectory": "D:\\Sources\\CaveCat\\CaveCat IDE\\CaveCat IDE\\bin\\Debug"
+    }
+  }
+}
