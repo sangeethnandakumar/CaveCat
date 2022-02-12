@@ -28,7 +28,7 @@ namespace CaveCat.Interpreter.Handlers
                 chrome.Goto(url);
                 Logger.Log(new Output($"--------------------------------------------------", MessageType.INFO, execution));
                 Logger.Log(new Output($"1. Injecting [CaveCat => Web.Supportlibs.JQuery]", MessageType.ACTION, execution));
-                chrome.RunJavaScript(File.ReadAllText("jquery.js"));
+                chrome.RunJavaScript(File.ReadAllText( Directory.GetCurrentDirectory() + "\\net6.0\\jquery.js"));
                 Logger.Log(new Output($"2. Injecting [CaveCat => Chrome.Resolvers.XPath]", MessageType.ACTION, execution));
                 var xPathScript = @"
     $x = function(xpath, opt_startNode)

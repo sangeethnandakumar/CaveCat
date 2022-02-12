@@ -28,7 +28,7 @@ namespace CaveCat.Interpreter
                 {
                     try
                     {
-                        var line = code.Split('\n')[i];
+                        var line = code.Split(' ')[i];
 
                         //Set execution headers
                         execution.Line = i + 1;

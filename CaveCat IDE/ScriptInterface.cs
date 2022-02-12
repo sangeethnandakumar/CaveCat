@@ -62,6 +62,7 @@ namespace CaveCat_IDE
                     StatusPane.BackColor = Color.SeaGreen;
                     Logs.BackColor = Color.White;
                     ResetEditor();
+                    Run.Enabled = Enabled;
                     break;
                 case MessageType.ACTION:
                     HighlightLine(log.ExecutionInfo.Code, Color.Yellow);
@@ -87,6 +88,7 @@ namespace CaveCat_IDE
                     Logs.ForeColor = Color.Red;
                     Logs.BackColor = Color.White;
                     Logs.Items.Add(log.Message);
+                    Run.Enabled = true;
                     break;
             }
             int visibleItems = Logs.ClientSize.Height / Logs.ItemHeight;
@@ -110,7 +112,7 @@ namespace CaveCat_IDE
             try
             {
                 myProcess.StartInfo.UseShellExecute = false;
-                myProcess.StartInfo.FileName = @"D:\Sources\CaveCat\CaveCat IDE\CaveCat.CLI\bin\Debug\net6.0\CaveCat.CLI.exe";
+                myProcess.StartInfo.FileName = @"D:\Sources\CaveCat v2\CaveCat.CLI\bin\Debug\net6.0\CaveCat.CLI.exe";
                 myProcess.StartInfo.Arguments = $"\"{TempFile}\"";
                 myProcess.StartInfo.CreateNoWindow = true;
                 myProcess.StartInfo.RedirectStandardOutput = true;
@@ -142,6 +144,7 @@ namespace CaveCat_IDE
 
         private void Run_Click(object sender, EventArgs e)
         {
+            Run.Enabled = false;
             Status.Text = "Ready";
             StatusPane.BackColor = Color.SeaGreen;
 
