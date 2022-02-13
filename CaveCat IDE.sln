@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaveCat.Interpreter", "Cave
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaveCat.CLI", "CaveCat.CLI\CaveCat.CLI.csproj", "{5D99E14A-3822-4717-A8C8-8BC0069F89A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaveCat.Lex", "CaveCat.Lex\CaveCat.Lex.csproj", "{7D191737-C092-42C5-98F1-3D8F31C6ACE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaveCat.Lexer", "CaveCat.Lex\CaveCat.Lexer.csproj", "{7D191737-C092-42C5-98F1-3D8F31C6ACE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lang", "Lang", "{A0AC7B06-4EEF-4CFE-90F3-4E8CA6F64170}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaveCat.Composer", "CaveCat.Composer\CaveCat.Composer.csproj", "{2B3F6BBC-6FAA-4042-B633-2192C2D73BE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaveCat.Commons", "CaveCat.Commons\CaveCat.Commons.csproj", "{E04C9864-0AB5-4B46-B630-57DBF80B1B9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,23 @@ Global
 		{7D191737-C092-42C5-98F1-3D8F31C6ACE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D191737-C092-42C5-98F1-3D8F31C6ACE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D191737-C092-42C5-98F1-3D8F31C6ACE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B3F6BBC-6FAA-4042-B633-2192C2D73BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B3F6BBC-6FAA-4042-B633-2192C2D73BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B3F6BBC-6FAA-4042-B633-2192C2D73BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B3F6BBC-6FAA-4042-B633-2192C2D73BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E04C9864-0AB5-4B46-B630-57DBF80B1B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E04C9864-0AB5-4B46-B630-57DBF80B1B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E04C9864-0AB5-4B46-B630-57DBF80B1B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E04C9864-0AB5-4B46-B630-57DBF80B1B9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{777AF551-EB87-4BC3-A0FE-0B38C6751984} = {A0AC7B06-4EEF-4CFE-90F3-4E8CA6F64170}
+		{7D191737-C092-42C5-98F1-3D8F31C6ACE4} = {A0AC7B06-4EEF-4CFE-90F3-4E8CA6F64170}
+		{2B3F6BBC-6FAA-4042-B633-2192C2D73BE6} = {A0AC7B06-4EEF-4CFE-90F3-4E8CA6F64170}
+		{E04C9864-0AB5-4B46-B630-57DBF80B1B9A} = {A0AC7B06-4EEF-4CFE-90F3-4E8CA6F64170}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {006D050F-59FC-4C95-92D6-502663783721}
